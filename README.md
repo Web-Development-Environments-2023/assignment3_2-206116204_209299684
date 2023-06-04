@@ -26,7 +26,7 @@ This is the backend for our Recipe website, responsible for handling the server-
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/.git
+   git clone [https://github.com/.git](https://github.com/Web-Development-Environments-2023/assignment3_2-206116204_209299684.git)
    ```
 
 2. Set up the MySQL database:
