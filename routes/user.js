@@ -84,6 +84,22 @@ router.get('/allRecipes', async (req,res,next) => {
     next(error);
   }
 });
+
+router.get('/myFamilyFavoriteRecipes', async (req,res,next) => {
+  try{
+    const user_id = req.session.user_id;
+    let listOfRecipes = await DButils.execQuery(`SELECT * from myFamilyFavoriteRecipes WHERE user_id='${user_id}'`);
+    if (listOfRecipes.length === 0){
+      res.status(404).send("You need to add Recipe with your family.");
+    }
+    else{
+      res.status(200).send(listOfRecipes);
+    }
+  } catch(error){
+    next(error);
+  }
+});
+
 router.get('/user_last_3_watch', async (req,res,next) => {
   try{
     const user_id = req.session.user_id;
