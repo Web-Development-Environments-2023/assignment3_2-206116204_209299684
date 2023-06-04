@@ -44,7 +44,7 @@ This is the backend for our Recipe website, responsible for handling the server-
 
 ## 📶 API Documentation
 
-![image](https://github.com/YadinDeri/template-Assignment-3.2/assets/76015915/ea8b0af7-4747-4997-90e6-2ce80cebbfed)
+![image](https://github.com/Web-Development-Environments-2023/assignment3_2-206116204_209299684/assets/76015915/055157e2-2f4e-44cb-93c9-9c3fede069af)
 
 
 # 📎 Create by:
