@@ -79,7 +79,7 @@ async function get_all_Recipecs(user_id) {
     const existingRecipes = await DButils.execQuery(`SELECT recipe_ids FROM user_created_recipes WHERE user_id='${user_id}'`);
     let recipesToReturn = [];
     if (existingRecipes.length > 0) {
-        const recipeIds = existingRecipes[0].recipe_ids[0].id; // Extract the recipe IDs from the JSON object
+        const recipeIds = existingRecipes[0].recipe_ids; // Extract the recipe IDs from the JSON object
         for (const recipeId of recipeIds) {
             const recipe = await recipes_utils.getRecipeDetails(recipeId);
             recipesToReturn.push(recipe);
